@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://Wheatley:2210374BiV@cluster0.h3iww.mongodb.net/app?retryWrites=true&w=majority",
+  "jwtSecret": "wheatley web project",
+  "baseUrl": "http://localhost:5000"
+}

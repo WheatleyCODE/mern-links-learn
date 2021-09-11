@@ -1,0 +1,40 @@
+{
+  "name": "mern-links",
+  "version": "1.0.0",
+  "description": "mern",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "server": "nodemon dist/src/index.js",
+    "client": "npm run start --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": " <qb.wheatley@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/config": "^0.0.39",
+    "@types/express": "^4.17.13",
+    "@types/express-validator": "^3.0.0",
+    "@types/mongoose": "^5.11.97",
+    "concurrently": "^6.2.1",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.5",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "shortid": "^2.2.16"
+  }
+}
